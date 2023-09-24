@@ -28,9 +28,7 @@ void selection_sort(int *array, size_t size)
 			temp = array[x];
 			array[x] = array[m];
 			array[m] = temp;
+			print_array(array, size);
 		}
-
-		print_array(array, size);
-
 	}
 }
