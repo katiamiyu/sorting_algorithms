@@ -7,10 +7,10 @@
  */
 void selection_sort(int *array, size_t size)
 {
-	size_t x, y,m = 0;
+	size_t x, y, m = 0;
 	int temp = 0;
 
-	if (!array && size < 2)
+	if (!array || size < 2)
 		return;
 	for (x = 0; x < size; x++)
 	{
@@ -19,7 +19,7 @@ void selection_sort(int *array, size_t size)
 		{
 			if (array[m] > array[y])
 			{
-				 m = y;
+				m = y;
 			}
 		}
 
